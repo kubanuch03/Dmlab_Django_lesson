@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="" enctype="multipart/form-data">
+  {%csrf_token%}
+  <label>title</label>
+  <input type="text" name="title"><br>
+  <label>description</label>
+  <input type="text" name="description"><br>
+  <label>isdn</label>
+  <input type="text" name="isdn"><br>
+  <label>author</label>
+  <input type="text" name="author"><br>
+  <label>janr</label>
+  <input type="text" name="janr"><br>
+  <label>publisher</label>
+  <input type="text" name="publisher"><br>
+  <input class="form-control" type="file" id="formFile" name="image">
+  <input type="submit" name="create"><br>
+</form>
+
+</body>
+</html>
